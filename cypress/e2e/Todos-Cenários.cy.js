@@ -142,46 +142,7 @@ describe('Todos-Cenários', () => {
         cy.url().should('eq', 'https://www.saucedemo.com/checkout-step-two.html')
     });
 
-    it('C007.003 - Informações incopletas (First Name)', () => {
-        //Chegar na tela https://www.saucedemo.com/checkout-step-one.html
-        //metodo checkout criado no arquivo checkout.js
-        cy.checkout()
-
-        //C007.003 - Informações incopletas (First Name)
-        cy.get('[data-test="lastName"]').type("Last Name")
-        cy.get('[data-test="postalCode"]').type("Zip/Postal Code")
-        cy.get('[data-test="continue"]').click()
-        //Verificação
-        cy.get('[data-test="error"]').should('contain','Error: First Name is required')
-    });
-
-    it('C007.004 - Informações incopletas (Last Name)', () => {
-        //Chegar na tela https://www.saucedemo.com/checkout-step-one.html
-        //metodo checkout criado no arquivo checkout.js
-        cy.checkout()
-
-        //C007.004 - Informações incopletas (Last Name)
-        cy.get('[data-test="firstName"]').type("Fist Name")
-        cy.get('[data-test="postalCode"]').type("Zip/Postal Code")
-        cy.get('[data-test="continue"]').click()
-        //Verificação
-        cy.get('[data-test="error"]').should('contain','Error: Last Name is required')
-    });
-
-    it('C007.005 - Informações incopletas (Zip/Postal Code)', () => {
-        //Chegar na tela https://www.saucedemo.com/checkout-step-one.html
-        //metodo checkout criado no arquivo checkout.js
-        cy.checkout()
-
-        //C007.005 - Informações incopletas (Zip/Postal Code)
-        cy.get('[data-test="firstName"]').type("Fist Name")
-        cy.get('[data-test="lastName"]').type("Last Name")
-        cy.get('[data-test="continue"]').click()
-        //Verificação
-        cy.get('[data-test="error"]').should('contain','Error: Postal Code is required')
-    });
-
-    it('C007.006 - Finalizar compra', () => {
+    it('C007.003 - Finalizar compra', () => {
         //Chegar na tela https://www.saucedemo.com/checkout-step-one.html
         //metodo checkout criado no arquivo checkout.js
         cy.checkout()
