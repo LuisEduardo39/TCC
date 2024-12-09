@@ -33,10 +33,7 @@ Os testes estão organizados em diferentes cenários, conforme descrito abaixo:
 ### Cenários de Compra
 - **C007.001 - Checkout**: Verifica se a página de checkout é carregada corretamente.
 - **C007.002 - Informações completas**: Verifica se o preenchimento completo das informações de checkout funciona corretamente.
-- **C007.003 - Informações incompletas (First Name)**: Verifica a mensagem de erro ao deixar o campo "First Name" vazio.
-- **C007.004 - Informações incompletas (Last Name)**: Verifica a mensagem de erro ao deixar o campo "Last Name" vazio.
-- **C007.005 - Informações incompletas (Zip/Postal Code)**: Verifica a mensagem de erro ao deixar o campo "Zip/Postal Code" vazio.
-- **C007.006 - Finalizar compra**: Verifica se a compra pode ser finalizada corretamente.
+- **C007.003 - Finalizar compra**: Verifica se a compra pode ser finalizada corretamente.
 
 ## Instalação
 Para instalar e configurar o projeto, siga os passos abaixo:
